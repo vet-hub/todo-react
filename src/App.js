@@ -7,7 +7,7 @@ import "./App.css"
 
 
 
-const toDoS =[ {
+const toDosArray =[ {
   key: 1,
   description: "test",
   done: true
@@ -27,11 +27,9 @@ function App() {
   return (
     <>
       <div className="toDoContainer">
-        <ToDoForm></ToDoForm>
+        <ToDoForm list={toDosArray}></ToDoForm>
         <ToDoProgress></ToDoProgress>
-        <ToDoList toDoS={toDoS}>
-          
-
+        <ToDoList list={toDosArray}>
         </ToDoList>
       </div>
     </>

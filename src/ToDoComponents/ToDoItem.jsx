@@ -5,7 +5,7 @@ export default function ToDoItem(param){
             <div className="toDoItem">
                 <label>
                     <input type="checkbox"/>
-                    <span className="task">{param.toDo.description}</span>
+                    <span className="task">{param.todo.description}</span>
                 </label>
                 <button className="doRestore">↺</button>
                 <div className="toDoItemMenu">

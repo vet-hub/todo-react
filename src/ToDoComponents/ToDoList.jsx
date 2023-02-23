@@ -4,11 +4,10 @@ export default function ToDoList(param){
     return (
         <>
             <article className="listToDoItems">
-                {console.log(param.toDoS)}
-                {param.toDoS.map((toDo) => {
+                {param.list.map((toDo) => {
                     return (
                         <>
-                            <ToDoItem toDo={toDo}>
+                            <ToDoItem todo={toDo}>
                             </ToDoItem>
                         </>
                     )
